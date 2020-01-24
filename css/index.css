@@ -245,7 +245,7 @@ footer {
   }
 }
 .home .intro .main-header-img {
-  border-radius: 7px;
+  border-radius: 10px;
 }
 @media (max-width: 500px) {
   .home .intro .main-header-img {
@@ -274,7 +274,7 @@ footer {
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
-  border-radius: 20px;
+  border-radius: 10px;
   height: 100%;
 }
 @media (max-width: 500px) {
