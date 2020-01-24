@@ -9,7 +9,10 @@ nav {
         .flexBox(space-between, center, row);
         width: 42%;
         margin-bottom: 1%;
-
+        @media @phone {
+            width:80%;
+            margin-bottom: 2%;
+        }
         a {
             text-decoration: none;
             color: @nav-font;
