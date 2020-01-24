@@ -177,6 +177,7 @@ p {
   margin: 0 auto;
 }
 nav {
+  height: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,7 +185,16 @@ nav {
   width: 100%;
   padding: auto 30%;
   border-bottom: 2px solid #F1F1F1;
-  background-color: #F6F6F6;
+  background: rgba(246, 246, 246, 0.8);
+  /* LOCK HEADER TO TOP OF PAGE */
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+@media (max-width: 500px) {
+  nav {
+    height: 9rem;
+  }
 }
 nav .nav-links {
   display: flex;
@@ -209,11 +219,11 @@ nav .nav-links a:hover {
   filter: invert(30%);
 }
 nav .nav-logo {
-  margin: 2% auto;
+  margin: 1% auto;
 }
 nav .nav-logo p {
   font-family: 'Russo One', sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #23293B;
 }
 footer {
@@ -225,6 +235,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 9rem;
+}
+@media (max-width: 500px) {
+  .home {
+    margin-top: 9rem;
+  }
 }
 .home .intro .main-header-img {
   border-radius: 7px;

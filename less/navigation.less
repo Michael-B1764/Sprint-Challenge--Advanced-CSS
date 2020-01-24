@@ -1,9 +1,17 @@
 nav {
+    height:9rem;
     .flexBox(center, center, column-reverse);
     width:100%;
     padding:auto 30%;
     border-bottom: 2px solid @nav-border;
-    background-color: @nav-bg;
+    background: @nav-bg;
+    // div.first{
+    //     background: @nav-bg;
+    // }
+
+    @media @phone {
+      height:9rem;
+    }
 
     .nav-links {
         .flexBox(space-between, center, row);
@@ -25,12 +33,17 @@ nav {
     }// .nav-links
 
     .nav-logo{
-        margin:2% auto;
+        margin:1% auto;
 
         p {
             font-family: @header-font;
-            font-size: 4rem;
+            font-size: 3.5rem;
             color: @nav-font;
         }// p
     }// .nav-logo
-}// .flexBox
+
+    /* LOCK HEADER TO TOP OF PAGE */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}// nav
