@@ -1,1 +1,29 @@
-// Navigation code here
+nav {
+    .flexBox(center, center, column-reverse);
+    width:100%;
+    padding:auto 30%;
+    border-bottom: 2px solid @nav-border;
+    background-color: @nav-bg;
+
+    .nav-links {
+        .flexBox(space-between, center, row);
+        width: 42%;
+        margin-bottom: 1%;
+
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.5rem;
+        }// a
+    }// .nav-links
+
+    .nav-logo{
+        margin:2% auto;
+
+        p {
+            font-family: @header-font;
+            font-size: 4rem;
+            color: @nav-font;
+        }// p
+    }// .nav-logo
+}// .flexBox
