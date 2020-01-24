@@ -1,1 +1,31 @@
-// Mixins Here
+.flexBox(@justifyContent, @alignItems, @flexDirection){
+    display:flex;
+    justify-content: @justifyContent;
+    align-items: @alignItems;
+    flex-direction: @flexDirection
+}// .flexBox
+
+.curvedCorners() {
+    border-radius: 10px;
+}
+
+.btnStyle(@btnWidth, @btnHeight){
+    .flexBox(center, center, column);
+    border-radius: 4px;
+    background-color:@btn-bg-color;
+    color: @porcelain;
+    height:@btnHeight;
+    width:@btnWidth;
+
+    p {
+        .flexBox(center, center, row);
+        margin:0;
+        width:100%;
+        font-size: 1.8rem;
+    }// p
+
+    &:hover {
+        background-color:@waterloo;
+        color: @ebony-clay;
+    }// &:hover
+}// .btnStyle
